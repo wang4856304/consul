@@ -1,0 +1,15 @@
+server:
+   address: 192.168.0.105
+   port: 9902
+spring:
+    cloud:
+      consul:
+        host: 192.168.0.105
+        port: 8500
+        discovery:
+          #healthCheckPath: /
+          #healthCheckInterval: 15s
+          instance-id: consul-miya
+          tags: test
+    application:
+      name: consul-miya
